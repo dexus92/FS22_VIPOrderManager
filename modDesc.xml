@@ -70,6 +70,38 @@ Update 1.1.1
 Update 1.1.0
 -  Consideration of already own animal husbandries and productions
 -  first smal multiplayer adjustments (not yet multiplayer compatible)]]></en>
+	    
+	    <pl><![CDATA[VIP Order Manager oferuje rolnikowi zamówienia VIP składające się z kilku produktów do dostarczenia. 
+Dla każdego produktu z wyraźnym określeniem ilości do dostarczenia i miejsca przeznaczenia. Oprócz bieżącego zamówienia VIP można również zobaczyć kolejne trzy zamówienia VIP.
+Jednak tylko bieżące zamówienie może zostać dostarczone.
+
+Za pomocą prawego CTRL + O bieżąca kolejność jest wyświetlana przez kilka sekund. Prawy ALT + O wyświetla przegląd wszystkich zamówień VIP.
+W tym widoku możesz również anulować aktualne Zamówienie VIP za opłatą za zamówienia częściowe, które nie zostały jeszcze zrealizowane.
+
+Z każdym zamówieniem VIP zwiększa się aktualny poziom, a co za tym idzie zwiększa się również ilość zawartych zamówień indywidualnych i ilości do dostarczenia, a przychody maleją. 
+W obliczeniach uwzględnia się również posiadany obszar. Wraz ze wzrostem poziomu uwzględnianych jest również więcej produktów. 
+Ponieważ sam wolę grać na małych polach, obliczenia są do tego zoptymalizowane.
+
+Już z FS19 zacząłem rozwijać Menedżera zamówień VIP, aby reprezentował coś w rodzaju kampanii. Chciałem, aby gra była trochę ciekawsza,
+mówiąc mi, co mam wyhodować.
+
+Tryb wieloosobowy nie jest obecnie obsługiwany. 
+
+Chciałbym również podziękować wszystkim innym modderom, których mody dały mi wiele pomysłów i rozwiązań na przestrzeni czasu.
+
+W przypadku komunikatów o błędach lub sugestii odwiedź stronę: https://github.com/Fetty42/FS22_VIPOrderManager
+
+Update 1.2.0
+- Wsparcie MaizePlus
+- Prawdopodobieństwa użycia określonych typów wypełnień
+- Tłumaczenie na język rosyjski (dzięki Gonimy-Vetrom)
+
+Update 1.1.1
+- Naprawiono problemy z własnymi stacjami sprzedaży i produkcjami
+
+Update 1.1.0
+-  Uwzględnienie już posiadanych hodowli i produkcji zwierzęcych
+-  pierwsze drobne poprawki dla wielu graczy (jeszcze niekompatybilne z trybem dla wielu graczy)]]></pl>
 
 		<fr><![CDATA[Le VIP Order Manager propose à l'agriculteur des commandes VIP composées de plusieurs produits à livrer. 
 Pour chaque produit, la quantité à livrer et le lieu de destination sont explicitement indiqués. En plus de l'ordre VIP actuel, on peut déjà voir les trois prochains ordres VIP.
@@ -188,12 +220,14 @@ Update 1.1.0
 		<text name="input_ShowCurrentVIPOrder">
 			<de>Durchblättern VIP Aufträge</de>
 			<en>Flip VIP Orders</en>
+			<pl>Przerzucaj zamówienia VIP</pl>
 			<it>Vedi Ordini VIP correnti</it>
 			<ru>Взглянуть VIP-заказы</ru>
 		</text>		
 		<text name="input_ShowVIPOrderDlg">
 			<de>Anzeige des VIP Auftragsdialogs</de>
 			<en>Shows VIP Orders Dialog</en>
+			<pl>Pokazuje okno dialogowe zamówień VIP</pl>
 			<it>Mostra la panoramnica degli Ordini VIP</it>
 			<ru>Обзор VIP-заказов</ru>
 		</text>
@@ -202,12 +236,14 @@ Update 1.1.0
 		<text name="VIPOrderManager_DlgTitel_AbortCurrentVIPOrder">
 			<de>Abbruch aktuellen VIP Auftrag</de>
 			<en>Aborting current VIP Orders</en>
+			<pl>Anulowanie bieżących zamówień VIP</pl>
 			<it>Annulla gli Ordini VIP correnti</it>
 			<ru>Отказаться от текущих VIP-заказов</ru>
 		</text>
 		<text name="VIPOrderManager_DlgMsg_AbortCurrentVIPOrder">
 			<de>Du musst eine Abbruchgebühr von %s bezahlen. Für die bereits abgeschlossenen Teilaufträge erhältst du %s.</de>
 			<en>You have to pay a aborting fee of %s. For the already completed partial orders you will receive %s.</en>
+			<pl>Musisz uiścić opłatę za przerwanie w wysokości %s. Za zrealizowane już zamówienia częściowe otrzymasz %s.</pl>
 			<it>Devi pagare una commissione di %s per l'annullamento. Per gli ordini parziali già consegnati ricevi una somma di %s.</it>
 			<ru>За отказ вам необходимо возместить убытки в размере %s. За уже выполненную часть заказов вы получите %s.</ru>
 		</text>
@@ -216,24 +252,28 @@ Update 1.1.0
 		<text name="VIPOrderManager_CurrentVIPOrder">
 			<de>Aktueller VIP Auftrag</de>
 			<en>Current VIP Order</en>
+			<pl>Aktualne zamówienie VIP</pl>
 			<it>Ordine VIP corrente</it>
 			<ru>Текущий VIP-заказ</ru>
 		</text>
 		<text name="VIPOrderManager_NextVIPOrder">
 			<de>Nächster VIP Auftrag</de>
 			<en>Next VIP Order</en>
+			<pl>Kolejne zamówienie VIP</pl>
 			<it>Prossimo Ordine VIP</it>
 			<ru>Следующий VIP-заказ</ru>
 		</text>
 		<text name="VIPOrderManager_Payout">
 			<de>Auszahlung: %s</de>
 			<en>Payout: %s</en>
+			<pl>Wypłata: %s</pl>
 			<it>Pagamento: %s</it>
 			<ru>Выплата: %s</ru>
 		</text>
 		<text name="VIPOrderManager_OrderCompleted">
 			<de>Der aktuelle VIP-Auftrag wurde abgeschlossen.</de>
 			<en>Current VIP order was completed.</en>
+			<pl>Bieżące zamówienie VIP zostało zrealizowane.</pl>
 			<it>Ordine VIP corrente completato.</it>
 			<ru>Текущий VIP-заказ был завершён.</ru>
 		</text>
@@ -242,60 +282,70 @@ Update 1.1.0
         <text name="ui_orderDlg_title">
 			<de>Übersicht der VIP-Aufträge</de>
 			<en>Overview VIP Orders</en>
+			<pl>Przegląd zamówień VIP</pl>
 			<it>Panoramica Ordini VIP</it>
 			<ru>Обзор VIP-заказов</ru>
 		</text>		
         <text name="ui_orderDlg_header_product">
 			<de>Produkt</de>	
 			<en>Product</en>
+			<pl>Produkt</pl>
 			<it>Prodotto</it>
 			<ru>Продукция</ru>
         </text>		
         <text name="ui_orderDlg_header_requested">
 			<de>Angefordert</de>	
 			<en>Requested</en>
+			<pl>Wymagany</pl>
 			<it>Richiesto</it>
 			<ru>Запрошено</ru>
         </text>		
         <text name="ui_orderDlg_header_delivered">
 			<de>Geliefert</de>
 			<en>Delivered</en>
+			<pl>Dostarczony</pl>
 			<it>Consegnato</it>
 			<ru>Доставлено</ru>
         </text>		
         <text name="ui_orderDlg_header_payout">
 			<de>Auszahlung</de>	
 			<en>Payout</en>
+			<pl>Wypłata</pl>
 			<it>Pagamento</it>
 			<ru>Выплата</ru>
         </text>		
         <text name="ui_orderDlg_header_station">
 			<de>Lieferstation</de>	
 			<en>Delivery station</en>
+			<pl>Stacja dostawy</pl>
 			<it>Luogo di Consegna</it>
 			<ru>Станция доставки</ru>
         </text>		
         <text name="ui_orderDlg_btnClose">
 			<de>Schließen</de>	
 			<en>Close</en>
+			<pl>Zamknij</pl>
 			<it>Chiuso</it>
 			<ru>Закрыть</ru>
 		</text>		
         <text name="ui_orderDlg_btnAbort">
 			<de>Abbruch des aktuellen VIP Auftrags</de>	
 			<en>Abort current VIP Order</en>
+			<pl>Przerwij bieżące zamówienie VIP</pl>
 			<it>Annulla l'Ordine VIP corrente</it>
 			<ru>Отказаться от текущего VIP-заказа</ru>
 		</text>		
         <text name="ui_orderDlg_section_active">
 			<de>Level %s - Auszahlung: %s (Aktiv)</de>	
 			<en>Level %s - Payout: %s (Active)</en>
+			<pl>Poziom %s — Wypłata: %s (Aktywny)</pl>
 			<it>Livello %s - Pagamento: %s (Attivo)</it>
 			<ru>Уровень %s - Выплата: %s (активный)</ru>
 		</text>		
         <text name="ui_orderDlg_section_notactive">
 			<de>Level %s - Auszahlung: %s</de>	
 			<en>Level %s - Payout: %s</en>
+			<pl>Poziom %s - Wypłata: %s</pl>
 			<it>Livello %s - Pagamento: %s</it>
 			<ru>Уровень %s - Выплата: %s</ru>
 		</text>		
